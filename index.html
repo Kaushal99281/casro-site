@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casro - Premium Mobile Accessories</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Floating Gradient Glow */
+body::before {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #ff00cc, transparent);
+  top: -100px;
+  left: -100px;
+  filter: blur(120px);
+  opacity: 0.5;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #00f2fe, transparent);
+  bottom: -100px;
+  right: -100px;
+  filter: blur(120px);
+  opacity: 0.5;
+}
+
+.container {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* Header */
+h1 {
+  font-size: 52px;
+  letter-spacing: 3px;
+}
+
+.tagline {
+  font-size: 18px;
+  opacity: 0.85;
+  margin-bottom: 20px;
+}
+
+/* Coming Soon Text */
+.coming {
+  font-size: 26px;
+  margin: 20px 0;
+  background: linear-gradient(90deg, #ff00cc, #3333ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.amazon-btn {
+  background: linear-gradient(45deg, #ff9900, #ff5e00);
+  color: white;
+}
+
+.instagram-btn {
+  background: linear-gradient(45deg, #fd1d1d, #833ab4);
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+/* Products */
+.products {
+  margin-top: 50px;
+}
+
+.products h2 {
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  width: 240px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 15px;
+  backdrop-filter: blur(15px);
+  transition: 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow border animation */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background: linear-gradient(45deg, #ff00cc, #00f2fe);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.card:hover {
+  transform: translateY(-12px) scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>CASRO</h1>
+  <p class="tagline">Premium Mobile Accessories</p>
+
+  <div class="coming">🚀 Official Website Coming Soon</div>
+
+  <p>Shop our products now on Amazon 👇</p>
+
+  <a href="https://www.amazon.in/your-store-link" class="btn amazon-btn">🛒 Shop on Amazon</a>
+  <a href="https://instagram.com/casro.in" target="_blank" class="btn instagram-btn">📸 Follow @casro.in</a>
+
+  <div class="products">
+    <h2>Featured Products</h2>
+
+    <div class="card-container">
+
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200">
+        <h3>iPhone Case</h3>
+        <a href="https://www.amazon.in/your-link" class="btn amazon-btn">Buy</a>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200">
+        <h3>Fast Charging Cable</h3>
+        <a href="https://www.amazon.in/your-link" class="btn amazon-btn">Buy</a>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200">
+        <h3>Wireless Charger</h3>
+        <a href="https://www.amazon.in/your-link" class="btn amazon-btn">Buy</a>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Casro | Designed with ❤️
+  </footer>
+
+</div>
+
+</body>
+</html>
