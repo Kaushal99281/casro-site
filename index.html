@@ -1,212 +1,648 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Casro - Premium Mobile Accessories</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CASRO - Premium iPhone 16 Silicone Cases | Shop Now</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
 
-body {
-  background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
-  color: white;
-  overflow-x: hidden;
-}
+    body {
+      background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+      color: white;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
 
-/* Floating Gradient Glow */
-body::before {
-  content: "";
-  position: fixed;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, #ff00cc, transparent);
-  top: -100px;
-  left: -100px;
-  filter: blur(120px);
-  opacity: 0.5;
-}
+    /* Animated Background Gradient */
+    body::before {
+      content: "";
+      position: fixed;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(255, 0, 204, 0.4), transparent);
+      top: -200px;
+      left: -200px;
+      filter: blur(120px);
+      animation: float 8s ease-in-out infinite;
+      z-index: -1;
+    }
 
-body::after {
-  content: "";
-  position: fixed;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, #00f2fe, transparent);
-  bottom: -100px;
-  right: -100px;
-  filter: blur(120px);
-  opacity: 0.5;
-}
+    body::after {
+      content: "";
+      position: fixed;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(0, 242, 254, 0.4), transparent);
+      bottom: -200px;
+      right: -200px;
+      filter: blur(120px);
+      animation: float 8s ease-in-out infinite reverse;
+      z-index: -1;
+    }
 
-.container {
-  text-align: center;
-  padding: 50px 20px;
-}
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(30px, 30px); }
+    }
 
-/* Header */
-h1 {
-  font-size: 52px;
-  letter-spacing: 3px;
-}
+    /* Header Navigation */
+    header {
+      background: rgba(15, 32, 39, 0.8);
+      backdrop-filter: blur(10px);
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-.tagline {
-  font-size: 18px;
-  opacity: 0.85;
-  margin-bottom: 20px;
-}
+    .logo {
+      font-size: 28px;
+      font-weight: 800;
+      background: linear-gradient(135deg, #ff00cc, #00f2fe);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 2px;
+    }
 
-/* Coming Soon Text */
-.coming {
-  font-size: 26px;
-  margin: 20px 0;
-  background: linear-gradient(90deg, #ff00cc, #3333ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+    .social-links {
+      display: flex;
+      gap: 15px;
+    }
 
-/* Buttons */
-.btn {
-  display: inline-block;
-  margin: 10px;
-  padding: 12px 22px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
+    .social-links a {
+      color: white;
+      font-size: 18px;
+      transition: 0.3s;
+    }
 
-.amazon-btn {
-  background: linear-gradient(45deg, #ff9900, #ff5e00);
-  color: white;
-}
+    .social-links a:hover {
+      transform: scale(1.2);
+      color: #ff00cc;
+    }
 
-.instagram-btn {
-  background: linear-gradient(45deg, #fd1d1d, #833ab4);
-  color: white;
-}
+    /* Main Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
 
-.btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 20px rgba(255,255,255,0.3);
-}
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      margin-bottom: 80px;
+    }
 
-/* Products */
-.products {
-  margin-top: 50px;
-}
+    h1 {
+      font-size: 64px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+      background: linear-gradient(135deg, #ff00cc, #3333ff, #00f2fe);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: fadeInDown 0.8s ease-out;
+    }
 
-.products h2 {
-  margin-bottom: 20px;
-}
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
-}
+    .tagline {
+      font-size: 22px;
+      color: rgba(255, 255, 255, 0.85);
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
 
-.card {
-  width: 240px;
-  background: rgba(255,255,255,0.08);
-  border-radius: 20px;
-  padding: 15px;
-  backdrop-filter: blur(15px);
-  transition: 0.4s;
-  position: relative;
-  overflow: hidden;
-}
+    .subtitle {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.65);
+      margin-bottom: 30px;
+    }
 
-/* Glow border animation */
-.card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 20px;
-  padding: 2px;
-  background: linear-gradient(45deg, #ff00cc, #00f2fe);
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-}
+    /* CTA Buttons */
+    .cta-buttons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
 
-.card:hover {
-  transform: translateY(-12px) scale(1.05);
-}
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+      cursor: pointer;
+    }
 
-.card img {
-  width: 100%;
-  border-radius: 12px;
-}
+    .btn-primary {
+      background: linear-gradient(135deg, #ff00cc, #ff6b9d);
+      color: white;
+      box-shadow: 0 10px 30px rgba(255, 0, 204, 0.4);
+    }
 
-.card h3 {
-  margin: 10px 0;
-}
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 40px rgba(255, 0, 204, 0.6);
+    }
 
-/* Footer */
-footer {
-  margin-top: 50px;
-  font-size: 14px;
-  opacity: 0.7;
-}
-</style>
+    .btn-secondary {
+      background: transparent;
+      color: white;
+      border: 2px solid rgba(0, 242, 254, 0.5);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(0, 242, 254, 0.1);
+      border-color: #00f2fe;
+      transform: translateY(-3px);
+    }
+
+    /* Products Section */
+    .products-section {
+      margin-top: 60px;
+    }
+
+    .section-title {
+      font-size: 42px;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 50px;
+      background: linear-gradient(135deg, #ff00cc, #00f2fe);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 40px;
+    }
+
+    /* Product Grid */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+
+    .product-card {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+      border: 2px solid rgba(255, 255, 255, 0.15);
+      transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+      position: relative;
+      cursor: pointer;
+    }
+
+    .product-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #ff00cc, #00f2fe);
+      opacity: 0;
+      transition: opacity 0.4s;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .product-card:hover::before {
+      opacity: 0.8;
+    }
+
+    .product-card:hover {
+      transform: translateY(-15px) scale(1.02);
+      box-shadow: 0 25px 60px rgba(255, 0, 204, 0.4);
+      border-color: rgba(255, 0, 204, 0.5);
+    }
+
+    .product-image-container {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(255,0,204,0.1), rgba(0,242,254,0.1));
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .product-image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .product-card:hover .product-image-container img {
+      transform: scale(1.1);
+    }
+
+    .badge {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: linear-gradient(135deg, #ff00cc, #ff6b9d);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      z-index: 10;
+    }
+
+    .product-info {
+      padding: 25px;
+      text-align: center;
+    }
+
+    .color-name {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      text-transform: capitalize;
+    }
+
+    .product-type {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 16px;
+    }
+
+    .color-swatch {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 3px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .buy-btn {
+      width: 100%;
+      background: linear-gradient(135deg, #ff00cc, #ff6b9d);
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-size: 14px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .buy-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(255, 0, 204, 0.4);
+    }
+
+    /* Category Navigation */
+    .category-nav {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+    }
+
+    .category-btn {
+      padding: 10px 24px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      background: transparent;
+      color: white;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    .category-btn:hover {
+      border-color: #ff00cc;
+      color: #ff00cc;
+    }
+
+    .category-btn.active {
+      background: linear-gradient(135deg, #ff00cc, #ff6b9d);
+      border-color: #ff00cc;
+      box-shadow: 0 10px 30px rgba(255, 0, 204, 0.4);
+    }
+
+    .product-category {
+      display: none;
+    }
+
+    .product-category.active {
+      display: block;
+      animation: fadeIn 0.5s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.6);
+      margin-top: 60px;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: #ff00cc;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 42px;
+      }
+
+      .section-title {
+        font-size: 32px;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 20px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
+<header>
+  <div class="logo">CASRO</div>
+  <div class="social-links">
+    <a href="https://instagram.com/casro.in" target="_blank" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.amazon.in/sp?ie=UTF8&seller=A28GMPO3FOTZI4&isAmazonFulfilled=0" target="_blank" title="Amazon Store">
+      <i class="fab fa-amazon"></i>
+    </a>
+  </div>
+</header>
+
 <div class="container">
 
-  <h1>CASRO</h1>
-  <p class="tagline">Premium Mobile Accessories</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>CASRO</h1>
+    <p class="tagline">Premium iPhone 16 Silicone Cases</p>
+    <p class="subtitle">Protect Your Device in Style. Discover 7 Beautiful Colors</p>
 
-  <div class="coming">🚀 Official Website Coming Soon</div>
-
-  <p>Shop our products now on Amazon 👇</p>
-
-  <a href="https://www.amazon.in/sp?ie=UTF8&seller=A28GMPO3FOTZI4&isAmazonFulfilled=0&asin=B0GZDSC5GB&ref_=olp_merch_name_1" class="btn amazon-btn">🛒 Shop on Amazon</a>
-  <a href="https://instagram.com/casro.in" target="_blank" class="btn instagram-btn">📸 Follow @casro.in</a>
-
-  <div class="products">
-    <h2>Featured Products</h2>
-
-    <div class="card-container">
-
-      <div class="card">
-        <img src="https://via.placeholder.com/300x200">
-        <h3>iPhone Case</h3>
-        <a href="https://www.amazon.in/your-link" class="btn amazon-btn">Buy</a>
-      </div>
-
-      <div class="card">
-        <img src="https://via.placeholder.com/300x200">
-        <h3>Fast Charging Cable</h3>
-        <a href="https://www.amazon.in/your-link" class="btn amazon-btn">Buy</a>
-      </div>
-
-      <div class="card">
-        <img src="https://via.placeholder.com/300x200">
-        <h3>Wireless Charger</h3>
-        <a href="https://www.amazon.in/your-link" class="btn amazon-btn">Buy</a>
-      </div>
-
+    <div class="cta-buttons">
+      <a href="#products" class="btn btn-primary">
+        <i class="fas fa-shopping-bag"></i> Shop Now
+      </a>
+      <a href="https://instagram.com/casro.in" target="_blank" class="btn btn-secondary">
+        <i class="fab fa-instagram"></i> Follow Us
+      </a>
     </div>
-  </div>
+  </section>
 
-  <footer>
-    © 2026 Casro | Designed with ❤️
-  </footer>
+  <!-- Products Section -->
+  <section class="products-section" id="products">
+    <h2 class="section-title">Shop CASRO</h2>
+    <p class="section-subtitle">Premium accessories designed for maximum protection and style</p>
+
+    <!-- Category Navigation -->
+    <div class="category-nav">
+      <button class="category-btn active" data-category="iphone-16-silicone">
+        📱 iPhone 16 Silicone Cases
+      </button>
+      <button class="category-btn" data-category="coming-soon">
+        🔜 Coming Soon
+      </button>
+    </div>
+
+    <!-- iPhone 16 Silicone Cases -->
+    <div class="product-category active" data-category="iphone-16-silicone">
+      <div class="product-grid">
+
+      <!-- Baby Pink -->
+      <div class="product-card">
+        <div class="product-image-container">
+          <img src="inventory/iphone-16/solicone/baby-pink/main.jpeg" alt="Baby Pink iPhone 16 Case">
+          <span class="badge">BESTSELLER</span>
+        </div>
+        <div class="product-info">
+          <div class="color-swatch" style="background: linear-gradient(135deg, #ffc0cb, #ffb6c1);"></div>
+          <h3 class="color-name">Baby Pink</h3>
+          <p class="product-type">iPhone 16 Silicone Case</p>
+          <a href="https://www.amazon.in/dp/B0GZJ33MH9?th=1" target="_blank" class="buy-btn">
+            🛒 Buy on Amazon
+          </a>
+        </div>
+      </div>
+
+      <!-- Black -->
+      <div class="product-card">
+        <div class="product-image-container">
+          <img src="inventory/iphone-16/solicone/black/main.png" alt="Black iPhone 16 Case">
+        </div>
+        <div class="product-info">
+          <div class="color-swatch" style="background: linear-gradient(135deg, #1a1a1a, #3a3a3a);"></div>
+          <h3 class="color-name">Black</h3>
+          <p class="product-type">iPhone 16 Silicone Case</p>
+          <a href="https://www.amazon.in/dp/B0GZJBPD3V?th=1" target="_blank" class="buy-btn">
+            🛒 Buy on Amazon
+          </a>
+        </div>
+      </div>
+
+      <!-- Brown -->
+      <div class="product-card">
+        <div class="product-image-container">
+          <img src="inventory/iphone-16/solicone/brown/main.png" alt="Brown iPhone 16 Case">
+        </div>
+        <div class="product-info">
+          <div class="color-swatch" style="background: linear-gradient(135deg, #8b4513, #a0522d);"></div>
+          <h3 class="color-name">Brown</h3>
+          <p class="product-type">iPhone 16 Silicone Case</p>
+          <a href="https://www.amazon.in/dp/B0GZJ4DZX9?th=1" target="_blank" class="buy-btn">
+            🛒 Buy on Amazon
+          </a>
+        </div>
+      </div>
+
+      <!-- Cosmic Orange -->
+      <div class="product-card">
+        <div class="product-image-container">
+          <img src="inventory/iphone-16/solicone/cosmic-orange/main.png" alt="Cosmic Orange iPhone 16 Case">
+        </div>
+        <div class="product-info">
+          <div class="color-swatch" style="background: linear-gradient(135deg, #ff7f50, #ff8c00);"></div>
+          <h3 class="color-name">Cosmic Orange</h3>
+          <p class="product-type">iPhone 16 Silicone Case</p>
+          <a href="https://www.amazon.in/dp/B0GZHZKYB7?th=1" target="_blank" class="buy-btn">
+            🛒 Buy on Amazon
+          </a>
+        </div>
+      </div>
+
+      <!-- Dark Blue -->
+      <div class="product-card">
+        <div class="product-image-container">
+          <img src="inventory/iphone-16/solicone/dark-blue/main.png" alt="Dark Blue iPhone 16 Case">
+        </div>
+        <div class="product-info">
+          <div class="color-swatch" style="background: linear-gradient(135deg, #00008b, #0000cd);"></div>
+          <h3 class="color-name">Dark Blue</h3>
+          <p class="product-type">iPhone 16 Silicone Case</p>
+          <a href="https://www.amazon.in/dp/B0GZHZBS5T?th=1" target="_blank" class="buy-btn">
+            🛒 Buy on Amazon
+          </a>
+        </div>
+      </div>
+
+      <!-- Ice Blue -->
+      <div class="product-card">
+        <div class="product-image-container">
+          <img src="inventory/iphone-16/solicone/ice-blue/main.png" alt="Ice Blue iPhone 16 Case">
+        </div>
+        <div class="product-info">
+          <div class="color-swatch" style="background: linear-gradient(135deg, #87ceeb, #00bfff);"></div>
+          <h3 class="color-name">Ice Blue</h3>
+          <p class="product-type">iPhone 16 Silicone Case</p>
+          <a href="https://www.amazon.in/dp/B0GZJFWN96?th=1" target="_blank" class="buy-btn">
+            🛒 Buy on Amazon
+          </a>
+        </div>
+      </div>
+
+      <!-- Lavender -->
+      <div class="product-card">
+        <div class="product-image-container">
+          <img src="inventory/iphone-16/solicone/lavender/main.png" alt="Lavender iPhone 16 Case">
+        </div>
+        <div class="product-info">
+          <div class="color-swatch" style="background: linear-gradient(135deg, #e6e6fa, #dda0dd);"></div>
+          <h3 class="color-name">Lavender</h3>
+          <p class="product-type">iPhone 16 Silicone Case</p>
+          <a href="https://www.amazon.in/dp/B0GZJ1SS73?th=1" target="_blank" class="buy-btn">
+            🛒 Buy on Amazon
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coming Soon Section -->
+    <div class="product-category" data-category="coming-soon">
+      <div style="text-align: center; padding: 60px 20px;">
+        <h3 style="font-size: 28px; margin-bottom: 20px;">🚀 More Products Coming Soon!</h3>
+        <p style="font-size: 16px; color: rgba(255, 255, 255, 0.7); margin-bottom: 30px;">
+          We're working on expanding our collection with more amazing accessories.
+        </p>
+        <a href="https://instagram.com/casro.in" target="_blank" class="btn btn-primary">
+          <i class="fas fa-bell"></i> Follow us for updates
+        </a>
+      </div>
+    </div>
+
+  </section>
 
 </div>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-links">
+      <a href="https://www.amazon.in/sp?ie=UTF8&seller=A28GMPO3FOTZI4&isAmazonFulfilled=0" target="_blank">Amazon Store</a>
+      <a href="https://instagram.com/casro.in" target="_blank">Instagram</a>
+      <a href="mailto:contact@casro.in">Contact</a>
+    </div>
+    <p>© 2026 CASRO | Premium Mobile Accessories | Crafted with ❤️</p>
+  </div>
+</footer>
+
+<script>
+  // Category Navigation
+  document.querySelectorAll('.category-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const category = this.dataset.category;
+
+      // Remove active class from all buttons
+      document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+
+      // Add active class to clicked button
+      this.classList.add('active');
+
+      // Hide all categories
+      document.querySelectorAll('.product-category').forEach(cat => cat.classList.remove('active'));
+
+      // Show selected category - Use more specific selector to target only the product-category div
+      document.querySelector(`.product-category[data-category="${category}"]`).classList.add('active');
+    });
+  });
+</script>
 
 </body>
 </html>
